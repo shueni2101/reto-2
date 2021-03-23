@@ -1,0 +1,205 @@
+body{
+    background: url(barra.png) no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background: black;
+    border-radius: 10px;
+    color:white;
+    text-shadow: 0 0 30px #fff;
+}
+.menu{
+    background: chocolate;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.menu:hover{
+   padding:14px ;
+    background: rgb(160, 94, 46);
+}
+#carta_cervezas{
+transition: ease 5s;
+}
+.table{
+    background: white;
+    border: 4px groove black;
+    transition: 1s;
+    margin-left: 40%;
+}
+th{
+    background: crimson;
+    font-size: 20px;
+}
+.table td{
+    border: 4px groove black;
+    background: white;
+}
+.imagen_tabla{
+    margin-left: 18px;
+    width: 20px;
+    height: 60px;
+}
+.section{
+    display: flex;
+    flex-flow: column ;
+    align-items: center;
+}
+.dispenser1{
+    margin-top: 30px;
+    display: flex;
+    background-image: url(estanteria.png) ;
+    background-position: center;
+    background-size: contain;
+    border: 10px groove black;
+    width: 80%;
+    height: 180px;
+    justify-content: center;
+}
+.dispenser1 img{
+    margin: 5px;
+   height: 140px;
+   width: 40px;
+   transition: ease 0.3s;
+}
+.dispenser1 img:hover{
+    transform: rotate(20deg);
+ }
+ 
+
+.carro{
+    margin-top: 120px;
+    display: flex;
+    border: 10px groove black;
+    width: 80%;
+    height: 110px;
+}
+img{
+    height: 110px;
+    width: 30px;
+}
+.carrito{
+    width:10%; 
+    height:100%;
+}
+.cuenta{
+    display: flex;
+    background: wheat;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 15px;
+    border: 5px groove black;
+    height: 250px;
+    width: 170px;
+}
+.pagar{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    background: red;
+    margin-bottom: 70px;
+
+}
+.cantidad_cervezas_elegidas{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: green;
+    color: white;
+}
+
+
+@media only screen and (max-width:500px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+
+    .header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h1{
+    width: 60%;
+    height: auto;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 20%;
+    }
+    .table{
+        height: 60px;
+        width: 30%;
+    }
+    .section{
+        display: flex;
+        width: 80%;
+    }
+    .dispenser1{
+        margin-left: 50px;
+        display: flex;
+        width: 100%;
+        height: 80px;
+        background-image: url(estanteria.png) ;
+        background-position: center;
+        background-size: contain;
+    }
+    .dispenser1 img{
+    margin: 1px;
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 15px;
+    height: 70px;
+    }
+    .carro{
+        margin-top: 20px;
+        margin-left: 40px;
+        display: flex;
+        border: 10px groove black;
+        width: 80%;
+        height: 60px;
+    }
+    .cuenta{
+        display: flex;
+        background: wheat;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 40px;
+        font-size: 15px;
+        border: 5px groove black;
+        height: 200px;
+        width: 70px;
+    }
+    .pagar{
+        display: flex;
+        flex-direction: column;
+     
+    
+    }
+}

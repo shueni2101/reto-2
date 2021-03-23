@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <header class="header">
+        <div class="titulo">
+            <h1> Bienvenidos al bar GeeksHubs</h1>
+        </div>
+        <button class="menu" id="boton_carta">Ver menu</button>
+        <div class="carta_cervezas" id="carta_cervezas" hidden="true">
+            <table class="table">
+                <tr>
+                    <th> Cervezas </th>
+                    <th> Precio </th>
+                    <th> Nombre </th>
+                </tr>
+                <tr>
+                    <td> <img class="imagen_tabla" src="aguila.png"> </td>
+                    <td> 5€ </td>
+                    <td> El Aguila </td>
+                </tr>
+                <tr>
+                    <td> <img class="imagen_tabla" src="alhambra.png"> </td>
+                    <td> 4€ </td>
+                    <td> Alhambra Gran Reserva </td>
+                </tr>
+                <tr>
+                    <td> <img class="imagen_tabla" src="desperados.png"> </td>
+                    <td> 3€ </td>
+                    <td> Desperados </td>
+                </tr>
+                <tr>
+                    <td> <img class="imagen_tabla" src="estrella.png"> </td>
+                    <td> 2.5€ </td>
+                    <td> Estrella Galicia </td>
+                </tr>
+                <tr>
+                    <td> <img class="imagen_tabla" src="heineken.png"> </td>
+                    <td> 2€ </td>
+                    <td> Heineken </td>
+                </tr>
+                <tr>
+                    <td> <img class="imagen_tabla" src="heineken0.png"> </td>
+                    <td> 2€ </td>
+                    <td> Heineken 0 </td>
+                </tr>
+
+            </table>
+        </div>
+    </header>
+<section class="section">
+    
+    <div class="dispenser1" ondragover="dragover(event)" ondrop="devolver(event)" id="dispenser1" >
+        <img class="imagen1" id="aguila"  ondragstart="agarrar(event)" draggable="true" src="aguila.png">
+        <img class="imagen2" id="aguilaDos"  ondragstart="agarrar(event)" draggable="true" src="aguila.png">
+        <img class="imagen2" id="aguilaTres"  ondragstart="agarrar(event)" draggable="true" src="aguila.png">
+        <img class="imagen4" id="alhambra" ondragstart="agarrar(event)" draggable="true" src="alhambra.png">
+        <img class="imagen4" id="alhambraDos" ondragstart="agarrar(event)" draggable="true" src="alhambra.png">
+        <img class="imagen4" id="alhambraTres" ondragstart="agarrar(event)" draggable="true" src="alhambra.png">
+        <img class="imagen7" id="desperados" ondragstart="agarrar(event)" draggable="true" src="desperados.png">
+        <img class="imagen7" id="desperadosDos" ondragstart="agarrar(event)" draggable="true" src="desperados.png">
+        <img class="imagen7" id="desperadosTres" ondragstart="agarrar(event)" draggable="true" src="desperados.png">
+        <img class="imagen10" id="estrella" ondragstart="agarrar(event)"draggable="true" src="estrella.png">
+        <img class="imagen10" id="estrellaDos" ondragstart="agarrar(event)"draggable="true" src="estrella.png">
+        <img class="imagen10" id="estrellaTres" ondragstart="agarrar(event)"draggable="true" src="estrella.png">
+        <img class="imagen13" id="heineken" draggable="true" ondragstart="agarrar(event)" src="heineken.png">
+        <img class="imagen14" id="heinekenDos" draggable="true" ondragstart="agarrar(event)" src="heineken.png">
+        <img class="imagen14" id="heinekenTres" draggable="true" ondragstart="agarrar(event)" src="heineken.png">
+        <img class="imagen17" id="heineken0" draggable="true" ondragstart="agarrar(event)" src="heineken0.png">
+        <img class="imagen18" id="heineken0Dos" draggable="true" ondragstart="agarrar(event)" src="heineken0.png">
+        <img class="imagen18" id="heineken0Tres" draggable="true" ondragstart="agarrar(event)" src="heineken0.png">
+    </div>
+
+    <div class="carro" id="carro" ondrop="soltar(event)" ondragover="dragover(event)">
+            <div class="imagen">
+                <img class="carrito" src="carrito.png" >
+            </div>
+    </div>
+
+    <div class="cuenta">
+        <p class="pagar"> Total a pagar : </p>
+        <div class="totalYcantidad">       
+            <p class="cantidad_cervezas_elegidas"> Cantidad de cervezas : </p>
+        </div>
+    </div>
+
+</section>
+
+<footer class="footer">
+
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
